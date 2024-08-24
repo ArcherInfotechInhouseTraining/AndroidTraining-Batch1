@@ -13,11 +13,11 @@
 
 
 ### Step 2:
-	cd HTML-Training-Batch-1 (same for C, C++ and Java according to repository)
+	cd Android_Training-Batch-1
 
 ### Step 3:
-	Add you HTML Assignment in folder (same for C, C++ and Java)
-	Eg. First Assignment --> 1) assignmentfile.html
+	Add you Android Assignment in folder
+	Eg. First Assignment --> 1) assignmentfile.Android
 				 2) output.png
 	likewise other assignment
 
