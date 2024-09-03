@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationForm">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="XYZ Colloge/School"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Student Registration Form"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"/>
+
+                <!--            For Student Image-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Student Image"
+                        android:textSize="15dp"/>
+
+                    <FrameLayout
+                        android:layout_width="150dp"
+                        android:layout_height="150dp">
+
+                        <ImageView
+                            android:id="@+id/upload"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:background="@drawable/student"
+                            android:contentDescription="Upload Image"/>
+                        
+                        <ImageView
+                            android:id="@+id/success"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:visibility="gone"
+                            android:src="@drawable/baseline_check_24"
+                            android:contentDescription="Success Image"/>
+                        
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:text="(Less Than 5 MB)"
+                        android:layout_marginStart="20dp"
+                        android:textSize="15sp"/>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnupload"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:text="upload Image"
+                    android:layout_marginStart="100dp"/>
+
+                <!--            For Student Name -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Student Name:"
+                        android:textStyle="bold"
+                        android:textSize="15dp"/>
+
+                    <EditText
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="Enter The Name"
+                        android:textColor="#AD000000"
+                        android:layout_marginStart="30dp"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+
+                <!--            For Student Fathers Name-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Father's Name :"
+                        android:textStyle="bold"
+                        android:textSize="15dp"/>
+
+                    <EditText
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="Father's Full Name"
+                        android:textColor="#AD000000"
+                        android:layout_marginStart="25dp"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+
+                <!--            for Mothers Name-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mother's name :"
+                        android:textStyle="bold"
+                        android:textSize="15dp"/>
+
+                    <EditText
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="Mother's Full Name"
+                        android:textColor="#AD000000"
+                        android:layout_marginStart="20dp"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+
+                <!--            For Gender-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gender:"
+                        android:layout_gravity="center"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"/>
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="40dp">
+
+                        <RadioButton
+                            android:id="@+id/malebtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="male"
+                            android:textSize="15sp"
+                            android:layout_marginStart="30dp"/>
+
+                        <RadioButton
+                            android:id="@+id/femalebtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="Female"/>
+
+                        <RadioButton
+                            android:id="@+id/otherbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15sp"
+                            android:text="Other"/>
+                    </RadioGroup>
+
+                </LinearLayout>
+
+                <!--            for Date Of Birth-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Date Of Birth :"
+                        android:textStyle="bold"
+                        android:textSize="15dp"/>
+
+                    <EditText
+                        android:id="@+id/datetext"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Date Of Birth"
+                        android:textColor="#AD000000"
+                        android:layout_marginStart="30dp"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+
+                <!--            For Gmail-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gmail :"
+                        android:textStyle="bold"
+                        android:textSize="15dp"/>
+
+                    <EditText
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="abc@gmail.com"
+                        android:textColor="#AD000000"
+                        android:layout_marginStart="75dp"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+
+                <!--            for Level-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Level :"
+                        android:textStyle="bold"
+                        android:textSize="15dp"/>
+
+                    <EditText
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="Choose"
+                        android:textColor="#AD000000"
+                        android:layout_marginStart="80dp"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+
+                <!--            Department-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Department :"
+                        android:textStyle="bold"
+                        android:textSize="15dp"/>
+
+                    <EditText
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="Choose"
+                        android:textColor="#AD000000"
+                        android:layout_marginStart="40dp"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+
+                <!--TelMobile-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TelMobile :"
+                        android:textStyle="bold"
+                        android:textSize="15dp"/>
+
+                    <EditText
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="XXX XXX XXXX"
+                        android:textColor="#AD000000"
+                        android:layout_marginStart="50dp"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+
+
+<!--                Permanent Address-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Permanent Address"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"/>
+<!--                for State-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="State:"
+                        android:textStyle="bold"
+                        android:textSize="15dp"/>
+
+                    <EditText
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="State"
+                        android:textColor="#AD000000"
+                        android:layout_marginStart="80dp"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+<!--                For City-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="City:"
+                        android:textStyle="bold"
+                        android:textSize="15dp"/>
+
+                    <EditText
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="City"
+                        android:textColor="#AD000000"
+                        android:layout_marginStart="90dp"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+<!--                Zip Code-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Zip Code:"
+                        android:textStyle="bold"
+                        android:textSize="15dp"/>
+
+                    <EditText
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="Zip code"
+                        android:textColor="#AD000000"
+                        android:layout_marginStart="55dp"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+<!--                TelMobile-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TelMobile:"
+                        android:textStyle="bold"
+                        android:textSize="15dp"/>
+
+                    <EditText
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="XXX XXX XXXX"
+                        android:textColor="#AD000000"
+                        android:layout_marginStart="50dp"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+
+
+                <!--Permanent Address-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Temporary Address"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"/>
+                <!--                for State-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="State:"
+                        android:textStyle="bold"
+                        android:textSize="15dp"/>
+
+                    <EditText
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="State"
+                        android:textColor="#AD000000"
+                        android:layout_marginStart="80dp"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+                <!--                For City-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="City:"
+                        android:textStyle="bold"
+                        android:textSize="15dp"/>
+
+                    <EditText
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="City"
+                        android:textColor="#AD000000"
+                        android:layout_marginStart="90dp"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+                <!--                Zip Code-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Zip Code:"
+                        android:textStyle="bold"
+                        android:textSize="15dp"/>
+
+                    <EditText
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="Zip code"
+                        android:textColor="#AD000000"
+                        android:layout_marginStart="55dp"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+                <!--                TelMobile-->
+                <LinearLayout
+                    android:id="@+id/telphonper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TelMobile:"
+                        android:textStyle="bold"
+                        android:textSize="15dp"/>
+
+                    <EditText
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="XXX XXX XXXX"
+                        android:textColor="#AD000000"
+                        android:layout_marginStart="50dp"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="400dp"
+                android:layout_marginTop="1450dp"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/check1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="abc"/>
+
+                <CheckBox
+                    android:id="@+id/check2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="pqr"/>
+
+                <CheckBox
+                    android:id="@+id/check3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="stv"/>
+
+                <TextView
+                    android:id="@+id/selcttime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select Time"
+                    android:textStyle="bold"
+                    android:textSize="15dp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".thirdlayout">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/firstrow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:src="@drawable/camera"
+                    android:layout_width="130dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="0.5"
+                    android:layout_margin="10dp"
+                    android:background="#4BCEE2"
+                    android:padding="10dp"/>
+
+                <ImageView
+                    android:src="@drawable/camera"
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:background="#F29550"
+                    android:padding="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/secoundrow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/firstrow">
+                <ImageView
+                    android:src="@drawable/camera"
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:background="#4BCEE2"
+                    android:padding="10dp"/>
+
+                <ImageView
+                    android:src="@drawable/camera"
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:background="#F29550"
+                    android:padding="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/thirdrow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/secoundrow">
+
+                <LinearLayout
+                    android:layout_width="240dp"
+                    android:layout_height="240dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:src="@drawable/camera"
+                        android:layout_width="240dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="0.5"
+                        android:layout_margin="10dp"
+                        android:background="#4BCEE2"
+                        android:padding="10dp"/>
+
+                    <LinearLayout
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:src="@drawable/camera"
+                            android:layout_width="220dp"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:layout_margin="10dp"
+                            android:background="#F29550"
+                            android:padding="10dp"/>
+                        <ImageView
+                            android:src="@drawable/camera"
+                            android:layout_width="220dp"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:layout_margin="10dp"
+                            android:background="#F29550"
+                            android:padding="10dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <ImageView
+                    android:src="@drawable/camera"
+                    android:layout_width="130dp"
+                    android:layout_height="220dp"
+                    android:layout_weight="0.5"
+                    android:layout_margin="10dp"
+                    android:background="#4BCEE2"
+                    android:padding="10dp"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/forthrow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/thirdrow">
+                <ImageView
+                    android:src="@drawable/camera"
+                    android:layout_width="130dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="0.5"
+                    android:layout_margin="10dp"
+                    android:background="#4BCEE2"
+                    android:padding="10dp"/>
+
+                <ImageView
+                    android:src="@drawable/camera"
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:background="#F29550"
+                    android:padding="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/fifthrow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/forthrow">
+                <ImageView
+                    android:src="@drawable/camera"
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:background="#4BCEE2"
+                    android:padding="10dp"/>
+
+                <ImageView
+                    android:src="@drawable/camera"
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:background="#F29550"
+                    android:padding="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/sixthrow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/fifthrow">
+
+                <LinearLayout
+                    android:layout_width="240dp"
+                    android:layout_height="240dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:src="@drawable/camera"
+                        android:layout_width="240dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="0.5"
+                        android:layout_margin="10dp"
+                        android:background="#4BCEE2"
+                        android:padding="10dp"/>
+
+                    <LinearLayout
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:src="@drawable/camera"
+                            android:layout_width="220dp"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:layout_margin="10dp"
+                            android:background="#F29550"
+                            android:padding="10dp"/>
+                        <ImageView
+                            android:src="@drawable/camera"
+                            android:layout_width="220dp"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:layout_margin="10dp"
+                            android:background="#F29550"
+                            android:padding="10dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <ImageView
+                    android:src="@drawable/camera"
+                    android:layout_width="130dp"
+                    android:layout_height="220dp"
+                    android:layout_weight="0.5"
+                    android:layout_margin="10dp"
+                    android:background="#4BCEE2"
+                    android:padding="10dp"/>
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

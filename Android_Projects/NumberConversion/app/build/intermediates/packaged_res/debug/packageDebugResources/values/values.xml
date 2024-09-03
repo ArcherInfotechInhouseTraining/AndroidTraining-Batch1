@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="convertion_option">
+
+        <item>Binary</item>
+        <item>Decimal</item>
+        <item>Octal</item>
+        <item>HexaDecimal</item>
+
+    </string-array>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">NumberConversion</string>
+    <style name="Base.Theme.NumberConversion" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.NumberConversion" parent="Base.Theme.NumberConversion"/>
+</resources>

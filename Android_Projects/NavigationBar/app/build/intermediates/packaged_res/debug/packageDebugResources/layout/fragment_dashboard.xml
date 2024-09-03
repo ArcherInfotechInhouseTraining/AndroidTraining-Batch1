@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardFragment">
+    
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="2"
+        android:columnCount="1">
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:background="@drawable/rectangle"
+                android:backgroundTint="#6200EA"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="25dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="Total Order"
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4,982"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/logobackfordash"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="25dp" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="38dp"
+                    android:layout_marginStart="-50dp"
+                    android:background="@drawable/baseline_message_24"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:background="@drawable/rectangle"
+                android:backgroundTint="#FFAB00"
+                android:orientation="horizontal"
+                android:layout_marginStart="10dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="25dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="Total Person"
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="14,982"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/logobackfordash"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="25dp" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="38dp"
+                    android:layout_marginStart="-50dp"
+                    android:background="@drawable/baseline_person_add_24"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_row="1"
+            android:layout_column="0">
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:background="@drawable/rectangle"
+                android:backgroundTint="#AA00FF"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="25dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="Total Categ"
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="982"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/logobackfordash"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="25dp" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="38dp"
+                    android:layout_marginStart="-50dp"
+                    android:background="@drawable/baseline_category_24"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:background="@drawable/rectangle"
+                android:backgroundTint="#D50000"
+                android:orientation="horizontal"
+                android:layout_marginStart="10dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="25dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="Total"
+                        android:textSize="20sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$14,982"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="20sp"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/logobackfordash"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="25dp" />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="38dp"
+                    android:layout_marginStart="-50dp"
+                    android:background="@drawable/money_total_line_svgrepo_com"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </GridLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="270dp"
+        android:orientation="horizontal"
+        android:layout_marginStart="20dp">
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/product"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Order"
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+                
+            </LinearLayout>
+            
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/ordernumbers"
+                android:layout_marginStart="20dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,20 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id aboutus
+id contactus
+id home
+id logout
+id main
+layout activity_main
+menu menu
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Base.Theme.MenuBar
+style Theme.MenuBar
+xml backup_rules
+xml data_extraction_rules

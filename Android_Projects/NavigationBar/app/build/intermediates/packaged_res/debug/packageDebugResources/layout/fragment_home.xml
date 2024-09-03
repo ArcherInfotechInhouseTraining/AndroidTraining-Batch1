@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home">
+<!--    android:background="#8744E4">-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+        <LinearLayout
+            android:id="@+id/namecollect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hey ,"
+                android:layout_marginStart="10dp"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/blanktext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text=""
+                android:textSize="20sp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/edittexts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/entername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Your Name"
+                android:layout_margin="20dp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/proceed"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="150dp"
+            android:text="Proceed"
+            android:layout_marginStart="40dp"
+            android:backgroundTint="#6F4C9E"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_marginTop="260dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/serchlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/searchbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:queryHint="Search Here"
+                    android:background="#3C0091EA"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:orientation="vertical"
+                android:background="@drawable/grocmain1">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="20dp"
+                    android:text="Fresh And Healthy"
+                    android:textSize="17dp"
+                    android:textColor="#05622C"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="60dp"/>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:text="VEGETABLES"
+                    android:textSize="22dp"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="0dp"/>
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:text="Limited Time Offer"
+                    android:textSize="15dp"
+                    android:textColor="#D50000"
+                    android:layout_marginStart="10dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Categories"
+                android:textSize="22sp"
+                android:layout_marginTop="290dp"
+                android:layout_marginStart="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:rowCount="1"
+                android:columnCount="7"
+                android:layout_marginTop="335dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/vegetable"
+                    android:layout_row="0"
+                    android:layout_columnWeight="0.5"
+                    android:layout_column="0"
+                    android:layout_margin="10dp"/>
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/fruitsalad"
+                    android:layout_marginStart="20dp"
+                    android:layout_row="0"
+                    android:layout_margin="10dp"
+                    android:layout_columnWeight="0.5"
+                    android:layout_column="1"/>
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/healthydrink"
+                    android:layout_marginStart="20dp"
+                    android:layout_row="0"
+                    android:layout_columnWeight="0.5"
+                    android:layout_column="2"/>
+
+                <ImageView
+                    android:layout_margin="10dp"
+                    android:layout_width="70dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/bakery"
+                    android:layout_marginStart="20dp"
+                    android:layout_row="0"
+                    android:layout_columnWeight="0.5"
+                    android:layout_column="3"/>
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Exclusive Offer"
+                android:textSize="22sp"
+                android:layout_marginTop="440dp"
+                android:layout_marginStart="20dp"/>
+            
+            
+            <LinearLayout
+                android:layout_marginTop="450dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="360dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="30dp">
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="180dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/offerback">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/apple"
+                            android:padding="10dp"
+                            android:layout_gravity="center"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Apple"
+                            android:textColor="#C81919"
+                            android:gravity="center"
+                            android:textSize="25sp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="25Rs/-"
+                            android:textColor="#C81919"
+                            android:gravity="center"
+                            android:textSize="25sp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="180dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/offerback"
+                        android:layout_marginStart="50dp">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:padding="10dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/orange"
+                            android:layout_gravity="center"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Orange"
+                            android:textColor="#C81919"
+                            android:gravity="center"
+                            android:textSize="25sp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="15Rs/-"
+                            android:textColor="#C81919"
+                            android:gravity="center"
+                            android:textSize="25sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="360dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="30dp">
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="180dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/offerback">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/drink"
+                            android:padding="10dp"
+                            android:layout_gravity="center"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Juice"
+                            android:textColor="#C81919"
+                            android:gravity="center"
+                            android:textSize="25sp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="20Rs/-"
+                            android:textColor="#C81919"
+                            android:gravity="center"
+                            android:textSize="25sp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="180dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/offerback"
+                        android:layout_marginStart="50dp">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/vegetableoffer"
+                            android:layout_gravity="center"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Orange"
+                            android:textColor="#C81919"
+                            android:gravity="center"
+                            android:textSize="25sp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="15Rs/-"
+                            android:textColor="#C81919"
+                            android:gravity="center"
+                            android:textSize="25sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

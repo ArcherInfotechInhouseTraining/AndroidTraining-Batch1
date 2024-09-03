@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragment">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginTop="20dp">
+
+       <androidx.appcompat.widget.AppCompatButton
+           android:id="@+id/buttonred"
+           android:layout_width="80dp"
+           android:layout_height="80dp"
+           android:layout_weight="1"
+           android:text="RED"
+           android:background="@drawable/fragmentcircle"
+           android:backgroundTint="#A21111"
+           android:layout_marginStart="10dp"/>
+
+       <androidx.appcompat.widget.AppCompatButton
+           android:id="@+id/buttongreen"
+           android:layout_width="80dp"
+           android:layout_height="80dp"
+           android:layout_weight="1"
+           android:text="Green"
+           android:background="@drawable/fragmentcircle"
+           android:backgroundTint="#042A14"
+           android:layout_marginStart="10dp"/>
+
+       <androidx.appcompat.widget.AppCompatButton
+           android:id="@+id/buttonblue"
+           android:layout_width="80dp"
+           android:layout_height="80dp"
+           android:layout_weight="1"
+           android:background="@drawable/fragmentcircle"
+           android:text="Blue"
+           android:backgroundTint="#1631CA"
+           android:layout_marginStart="10dp"
+           android:layout_marginEnd="10dp"/>
+
+       <androidx.appcompat.widget.AppCompatButton
+           android:id="@+id/buttonwhite"
+           android:layout_width="80dp"
+           android:layout_height="80dp"
+           android:layout_weight="1"
+           android:background="@drawable/fragmentcircle"
+           android:text="WHITE"
+           android:backgroundTint="#F2F3FA"
+           android:layout_marginStart="10dp"
+           android:layout_marginEnd="10dp"/>
+
+   </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonpink"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="PINK"
+            android:background="@drawable/fragmentcircle"
+            android:backgroundTint="#BC095A"
+            android:layout_marginStart="10dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonpurple"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="PURPLE"
+            android:background="@drawable/fragmentcircle"
+            android:backgroundTint="#63399D"
+            android:layout_marginStart="10dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonorange"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="@drawable/fragmentcircle"
+            android:text="ORANGE"
+            android:backgroundTint="#AF5512"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonyello"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="@drawable/fragmentcircle"
+            android:text="YELLOW"
+            android:backgroundTint="#B19505"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonblack"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="BLACK"
+            android:background="@drawable/fragmentcircle"
+            android:backgroundTint="#0D0106"
+            android:textColor="@color/white"
+            android:layout_marginStart="10dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonskyblue"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="SKYBLUE"
+            android:background="@drawable/fragmentcircle"
+            android:backgroundTint="#599FCA"
+            android:layout_marginStart="10dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttoncyan"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="@drawable/fragmentcircle"
+            android:text="CYAN"
+            android:backgroundTint="#06B69E"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonChartreuse"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="@drawable/fragmentcircle"
+            android:text="CHART"
+            android:backgroundTint="#59C813"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/calculator"
+        android:layout_width="180dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Calculator"
+        android:backgroundTint="#DCBBED" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <FrameLayout
+            android:id="@+id/fragmentcontainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+        </FrameLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".grid"
+    android:padding="10dp"
+    android:layout_row="2"
+    android:layout_column="3"
+    android:background="#E99090">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:src="@drawable/rocket"
+        android:elevation="10dp"
+        android:layout_margin="10dp"
+        android:layout_columnWeight="1"/>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:src="@drawable/savemoney"
+        android:elevation="10dp"
+        android:layout_margin="10dp"
+        android:layout_columnWeight="1"/>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_row="0"
+        android:layout_column="2"
+        android:elevation="10dp"
+        android:src="@drawable/video"
+        android:layout_margin="10dp"
+        android:layout_columnWeight="1"/>
+
+</GridLayout>
