@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Grocery Website</string>
+    <string name="loginpage">LoginPage</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="login">Login</string>
+    <string name="welcome_to_uilover">Welcome To UILover</string>
+    <string name="channal_for_free">channal for free</string>
+    <string name="get_started">Get Started</string>
+    <string name="available_on_uilover">available on uilover</string>
+    <string name="download_all_the_designs">download all the designs</string>
+</resources>

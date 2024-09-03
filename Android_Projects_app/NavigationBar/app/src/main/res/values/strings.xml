@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">NavigationBar</string>
+    <string name="OpenDrawer">OpenDrawer</string>
+    <string name="CloseDrawer">CloseDrawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fresh_and_healthy_vegetables">Fresh And Healthy VEGETABLES</string>
+    <string name="registrationform" />
+</resources>

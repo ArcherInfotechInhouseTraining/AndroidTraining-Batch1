@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">LogInAndSignUp</string>
+    <string name="channal_for_free">channal for free</string>
+    <string name="available_on_the_uilover">available on the uilover</string>
+    <string name="download_all_designs">Download all designs</string>
+    <string name="welcome_to_uilover">WelCome to UILover</string>
+    <string name="get_started">Get Started</string>
+    <string name="hi_please_log_in_here">Hi Please Log in Here</string>
+    <string name="dont_remember_password_recovery_it">Dont remember password? recovery it.</string>
+    <string name="facebook">Facebook</string>
+    <string name="google">Google</string>
+    <string name="enter_your_email">Enter Your Email</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="email">Email</string>
+    <string name="repassword">RePassword</string>
+    <string name="sign_up">Sign Up</string>
+</resources>

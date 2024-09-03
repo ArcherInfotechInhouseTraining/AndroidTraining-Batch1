@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">NumberConversion</string>
+
+<!--    String Array-->
+    <string-array name="convertion_option">
+
+        <item>Binary</item>
+        <item>Decimal</item>
+        <item>Octal</item>
+        <item>HexaDecimal</item>
+
+    </string-array>
+
+</resources>

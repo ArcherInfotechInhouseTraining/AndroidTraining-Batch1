@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/navhome"
+        android:title="Home"
+        android:icon="@drawable/home_1_svgrepo_com"/>
+
+    <item android:id="@+id/dashboard"
+        android:title="DashBoard"
+        android:icon="@drawable/dashboard_svgrepo_com"/>
+
+    <item android:id="@+id/calci"
+        android:title="Calsi"
+        android:icon="@drawable/calculator_svgrepo_com"/>
+
+    <item android:id="@+id/settings"
+        android:title="Settings"
+        android:icon="@drawable/setting_1_svgrepo_com"/>
+
+    <item android:id="@+id/logout"
+        android:title="Log Out"
+        android:icon="@drawable/log_out_svgrepo_com"/>
+
+    <item android:id="@+id/registeform"
+        android:title="Register Here"
+        android:icon="@drawable/baseline_how_to_reg_24"
+        />
+</menu>
