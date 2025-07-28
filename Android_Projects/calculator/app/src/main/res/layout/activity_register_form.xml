@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register_form"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register Form"
+        android:textSize="40sp"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="50dp"
+        android:textColor="@color/white"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="200dp"
+                android:background="@drawable/button"
+                android:hint="Full Name"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:drawableStart="@drawable/user_circle"
+                android:drawablePadding="10dp"
+                android:paddingStart="10dp"
+                android:textColorHint="#F7004522"
+                android:backgroundTint="#51066B38"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/button"
+                android:hint="Email"
+                android:drawableStart="@drawable/mail_outline"
+                android:drawablePadding="10dp"
+                android:paddingStart="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:textColorHint="#004522"
+                android:backgroundTint="#51066B38"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:background="@drawable/button"
+                android:backgroundTint="#51066B38"
+                android:textColorHint="#004522"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:drawableStart="@drawable/key"
+                android:paddingStart="10dp"
+                android:drawablePadding="10dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ConfirmPassword"
+                android:background="@drawable/button"
+                android:backgroundTint="#51066B38"
+                android:layout_marginTop="40dp"
+                android:textColorHint="#004522"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:drawableStart="@drawable/check_circle"
+                android:paddingStart="10dp"
+                android:drawablePadding="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/button"
+                android:drawableStart="@drawable/baseline_call"
+                android:drawablePadding="10dp"
+                android:hint="Phone No"
+                android:padding="10dp"
+                android:paddingStart="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:textColorHint="#004522"
+                android:backgroundTint="#51066B38" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/button"
+                android:backgroundTint="#51066B38"
+                android:hint="DOB"
+                android:drawableStart="@drawable/baseline_cake_24"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:drawablePadding="10dp"
+                android:paddingStart="10dp"
+                android:textColorHint="#004522" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Gender"
+                android:textSize="22sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <RadioButton
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="Male"
+                        android:layout_marginStart="10dp"/>
+                    <RadioButton
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/female"/>
+                </RadioGroup>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Register"
+                    android:textSize="25sp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:backgroundTint="#E405371E"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

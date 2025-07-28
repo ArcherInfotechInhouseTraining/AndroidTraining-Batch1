@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "396159012107",
+    "project_id": "realtimedatbase-usingfirbase",
+    "storage_bucket": "realtimedatbase-usingfirbase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:396159012107:android:2097e1183d8f3ab69d260e",
+        "android_client_info": {
+          "package_name": "com.example.realtimedatbase_usingfirbase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB553V7LV-ojDLrVni6bzzMSjS6ZauEQqw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

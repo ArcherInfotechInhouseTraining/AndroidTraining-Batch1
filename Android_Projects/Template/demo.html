@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coffee Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grey+Qo&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sofia&display=swap" rel="stylesheet">
+
+    <style>
+        #main-container {
+            display: block;
+        }
+        
+        .nav-bar {
+            display: flex;
+            background-color: #f4f4f4;
+        }
+        
+        .nav-bar .logo-div {
+            width: 90px;
+            height: 50px;
+            border: 2px solid black;
+            background-image: url('https://img.freepik.com/free-vector/digital-technology-background-with-abstract-wave-border_53876-117508.jpg');
+            mask-image: url('photos/logo3.png');
+        }
+        
+        .nav-bar nav {
+            height: 50px;
+            width: 600px;
+            margin-left: 650px;
+            /*            background-color: darkred;*/
+            /*            box-shadow: 0px 1px 3px 1px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);*/
+        }
+        
+        .nav-bar nav h2 {
+            text-align: center;
+        }
+        
+        .nav-bar nav ul {
+            list-style-type: none;
+            padding: 0;
+            height: 50px;
+            width: 600px;
+            text-align: center;
+        }
+        
+        .nav-bar nav ul a:hover {
+            color: #E97451;
+        }
+        
+        .nav-bar nav ul li {
+            display: inline;
+            padding: 15px;
+            margin-top: 0px;
+        }
+        
+        .nav-bar nav ul li a {
+            color: black;
+            font-family: sans-serif;
+            text-decoration: none;
+        }
+        /* 
+        #home .homeimg-container {
+            background-image: url('photos/c1.jpg');
+            background-repeat: no-repeat;
+            height: 1000px;
+            width: 100%;
+            margin-top: -20px;
+        }
+        
+        #home .homeimg-container p {
+            color: white;
+            font-family: cursive;
+            font-size: 25px;
+            margin-left: 200px;
+            padding-top: 200px;
+        }*/
+        
+        #home img {
+            width: 100%;
+            height: 700px;
+            background-repeat: no-repeat;
+        }
+        
+        #home p {
+            margin-top: -337px;
+            margin-left: 700px;
+            color: #640814;
+            font-size: 20px;
+
+            font-family: "Sofia", sans-serif;
+        }
+        
+        #home button {
+            background-color: #C4A484;
+            /*			background-color: #38040E;*/
+            border: none;
+            cursor: pointer;
+            /*			opacity: 0.5;*/
+            color: white;
+            margin-left: 30px;
+            padding-inline: 5px;
+        }
+        
+        #home button:hover {
+            background-color: #38040E;
+        }
+        
+        #about-container {
+            position: relative;
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-content: center;
+            margin-top: 217px;
+        }
+        
+        #about-container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('photos/c2.jpg');
+            background-size: cover;
+            opacity: 0.7;
+            z-index: 0;
+        }
+        
+        #about-container .aboutus-content {
+            position: relative;
+            color: black;
+            z-index: 1;
+        }
+        
+        #about-container .aboutus-content h2 {
+            text-align: center;
+            color: #eaf6f6;
+            font-size: 40px;
+            font-family: "Sofia", sans-serif;
+        }
+        
+        #about-container .aboutus-content p {
+            padding-right: 1000px;
+            padding-left: 40px;
+            padding-top: 30px;
+            /*        	color: #900048;*/
+            color: black;
+            font-size: 20px;
+            font-family: "Sofia", sans-serif;
+        }       
+        #services h2 {
+            color: darkred;
+            text-align: center;
+            font-size: 20px;
+            font-family: "Sofia", sans-serif;
+        }
+        
+        #services .coffee-container {
+/*            display: flex;*/
+            margin-top: 50px;
+            width: 100%;
+/*            height: 500px;*/
+            box-shadow: 0px 4px 18px -2px rgba(9, 30, 66, 0.2);
+        }
+        
+        #services .coffee-container h4 {
+            text-align: center;
+            color: darkred;
+            font-size: 20px;
+/*            margin-top: 50px;*/
+            font-family: "Sofia", sans-serif;
+        }
+        
+        #services .coffee-container .coffee-content{
+/*        	margin-left: 0px;*/
+			display: flex;
+        	margin-top: 50px;
+        	background-color: #333;
+        	overflow: hidden;
+        	overflow-x: auto;
+        }
+        #services .coffee-container .coffee-content::-webkit-scrollbar{
+        	display: none;
+        }
+        #services .coffee-container .coffee-content img{
+        	width: 400px;
+        	height: 350px;
+        	margin-top: 5px;
+        	margin-right: 5px;
+        	margin-left: 20px;
+        	margin-bottom: 10px;
+        	border-radius: 20px;
+        	border: 2px solid rgba(138, 138, 128);
+        }
+        #services .otherdrinks-container{
+        	width: 100%;
+/*        	height: 500px;*/
+        	box-shadow:0px 4px 18px -2px rgba(9, 30, 66, 0.2); ;
+        }
+        #services .otherdrinks-container h4{
+         	text-align: center;
+            color: darkred;
+            font-size: 20px;
+/*            margin-top: 10px;*/
+            font-family: "Sofia", sans-serif;
+         }
+       
+        #services .otherdrinks-container .services-container::-webkit-scrollbar{
+        	display: none;
+        }
+        #services .otherdrinks-container .services-container{
+        	display: flex;
+        	background-color: #333;
+        	white-space: nowrap;
+        	overflow: hidden;
+        	overflow-x: auto;
+        }
+        #services .otherdrinks-container .services-container img{
+        	width: 400px;
+        	height: 350px;
+        	margin-top: 5px;
+        	margin-left: 20px;
+        	margin-right: 5px;
+        	margin-bottom: 10px;
+        	border: 2px solid rgba(138, 138, 128);
+        	border-radius: 20px;
+
+        }
+        #gallery {
+            background-color: #C2560F0F;
+        }
+        
+        #gallery h2 {
+            color: brown;
+            text-align: center;
+            padding-top: 20px;
+        }
+        
+        #gridcontainer {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr)
+        }
+        
+        .grid-item {
+            padding-left: 20px;
+            padding-top: 10px;
+            /*				grid-row-gap: 20px;*/
+        }
+        
+        .grid-item img {
+            width: 400px;
+            height: 220px;
+        }
+        
+        #contact {
+            width: 100%;
+            display: flex;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+        
+        .addr {
+            display: flex;
+            font-size: 15px;
+        }
+        
+        .addr pre {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .addr img {
+            padding-top: 50px;
+        }
+        
+        .mail .mail-content {
+            display: inline-flex;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .phone .phone-content {
+            display: inline-flex;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .contactus {
+            margin-left: 150px;
+        }
+        
+        .contactus h2 {
+            font-size: 50px;
+        }
+        
+        p {
+            font-family: sans-serif;
+        }
+        
+        .havequestion {
+            border: 2px solid white;
+            border-radius: 10px;
+            height: 570px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+            background-color: white;
+            margin-left: 300px;
+            margin-top: 30px;
+            margin-right: 70px;
+        }
+        
+        .question-content {
+            /*				padding-right: 500px;*/
+            margin-left: 30px;
+            padding: 20px;
+        }
+        
+        .havequestion .text-content {
+            font-family: Arial, sans-serif;
+        }
+        
+        form {
+            padding-top: 30px;
+        }
+        
+        input {
+            width: 300px;
+            height: 30px;
+            /*				background-color: lightblue;*/
+        }
+        
+        button {
+            border-radius: 15px;
+            width: 200px;
+            height: 40px;
+            margin-top: 40px;
+        }
+        
+        button:hover {
+            background-color: brown;
+        }
+        
+        #about .about-container .img-container {
+            width: 100%;
+            height: 800vh;
+            background-image: url('photos\\coffee_au.png');
+            opacity: 0.3;
+            background-repeat: no-repeat;
+            object-fit: cover;
+        }
+        
+        .mid-container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main-container">
+        <div class="nav-bar">
+            <div id="logo-div">
+                <!-- <img src="photos/logo1.png" width="50" height="50"> -->
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#branches">Branches</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- <div class="mid-container"> -->
+        <div id="home">
+            <img src="photos/blackcoffee.jpg">
+            <p>Coffee is a liquid hug for your brain.</p>
+            <button><b>Order Online</b></button>
+            <button><b>Book Table</b></button>
+        </div>
+
+        <div id="about-container">
+            <div class="aboutus-content">
+                <h2>About Us</h2>
+                <p>
+                    Welcome to Shree Coffee! At Shree Coffee, we believe that coffee is more than just a beverage;it’s a way of life. Nestled in the heart of Kothrud,our cozy little shop is a haven for coffee enthusiasts and casual sippers alike. We are dedicated to brewing
+                    the perfect cup of coffee, one that warms your heart and invigorates your senses.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- services div -->
+
+    <div id="services">
+        <!-- <img src="photos/c1.jpg"> -->
+        <h2>Services</h2>
+
+        <div class="coffee-container">
+            <h4>Coffee</h4>
+            <div class="coffee-content">
+	            <img src="photos/s1.jpg">
+	           	<img src="photos/s2_ci.jpg">
+	            <img src="photos/s2_coldcoffee.jpg">
+	            <img src="photos/s_blackcoffee.jpg">
+	            <img src="photos/s1.jpg">
+	            <img src="photos/s2_coldcoffee.jpg">
+	            <img src="photos/s_blackcoffee.jpg">
+	           	<img src="photos/s1.jpg">
+	            <img src="photos/s2_coldcoffee.jpg">
+	            <img src="photos/s_blackcoffee.jpg">
+	            <img src="photos/s1.jpg">
+	        </div>
+        </div>
+
+        <div class="otherdrinks-container">
+        	<h4>Other Services</h4>
+        	<div class="services-container">
+        		<img src="photos/s1.jpg">
+	           	<img src="photos/s2_ci.jpg">
+	            <img src="photos/s2_coldcoffee.jpg">
+	            <img src="photos/s_blackcoffee.jpg">
+	            <img src="photos/s1.jpg">
+	            <img src="photos/s2_coldcoffee.jpg">
+	            <img src="photos/s_blackcoffee.jpg">
+	           	<img src="photos/s1.jpg">
+	            <img src="photos/s2_coldcoffee.jpg">
+	            <img src="photos/s_blackcoffee.jpg">
+	            <img src="photos/s1.jpg">
+        	</div>
+        </div>
+    </div>
+
+    <!-- gallery div -->
+
+    <div id="gallery">
+        <h2>Gallery</h2>
+        <div id="gridcontainer">
+            <div class="grid-item">
+                <img src="photos/coffes.jpg">
+            </div>
+            <div class="grid-item">
+                <img src="photos/blackcoffee.jpg">
+            </div>
+            <div class="grid-item">
+                <img src="photos/coldcoffee.jpg">
+            </div>
+            <div class="grid-item">
+                <img src="photos/coffee1.jpg">
+            </div>
+            <div class="grid-item">
+                <img src="photos/coffee3.jpg">
+            </div>
+            <div class="grid-item">
+                <img src="photos/gallary1.jpg">
+            </div>
+            <div class="grid-item">
+                <img src="photos/hotchocolate.jpg">
+            </div>
+            <div class="grid-item">
+                <img src="photos/coffee4.jpg">
+            </div>
+            <div class="grid-item">
+                <img src="photos/coffee5.jpg">
+            </div>
+        </div>
+    </div>
+
+    <div id="branches">
+
+    </div>
+
+    <div id="contact">
+
+        <div class="contactus">
+
+            <h2>Contact Us</h2>
+            <p>Reach out to us for queries, feedback and more.</p>
+
+            <div class="addr">
+                <img src="photos/addr1.png" width="30" height="20">
+                <p>
+                    <b>
+							Flat No 12, Divyadarshan Housing Society,<br> 
+							Behind Kothrud Bus Stand, <br>
+							Near Natraj Gas Agency, <br>
+							Kothrud, Pune, Maharashtra 411029</b>
+                </p>
+            </div>
+
+            <div class="mail">
+                <div class="mail-content"><img src="photos/mail1.jpg" width="40" height="20"></div>
+                <div class="mail-content">
+                    <p><b>shree@coffeeshop.in</b></p>
+                </div>
+            </div>
+
+            <div class="phone">
+                <div class="phone-content"><img src="photos/phone.jpg" width="30" height="20"></div>
+                <div class="phone-content">
+                    <p><b>+914830283828, +914829102389</b></p>
+                </div>
+            </div>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d30269.084285925182!2d73.813071!3d18.500161!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf9c1e0560b3%3A0x502fa5b22e143e8a!2sDivyadarshan%20co%20op%20housing%20society!5e0!3m2!1sen!2sus!4v1722685911692!5m2!1sen!2sus"
+                width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="havequestion">
+            <div class="question-content">
+                <div class="text-content">
+                    <h2>Have Questions?</h2>
+                    <h3>We are available to answer any query</h3>
+                </div>
+
+                <form accept="submit-form">
+
+                    <input type="text" id="name" name="name" placeholder="Name"><br><br>
+
+                    <input type="text" id="email" name="email" placeholder="Email Address"><br><br>
+
+                    <input type="text" id="subject" name="subject" placeholder="Subject"><br><br>
+
+                    <textarea id="message" name="message" rows="4" cols="40" placeholder="YOUR MESSAGE"></textarea>
+                    <button>SEND MESSAGE</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="30dp"
+    android:layout_margin="20dp"
+    android:elevation="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#079987">
+
+        <TextView
+            android:id="@+id/courseName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CPP"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="26sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="100dp"/>
+
+        <ImageView
+            android:id="@+id/courseImg"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/cpp"
+            android:padding="5dp"
+            android:layout_marginStart="220dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/courseImg">
+
+            <TextView
+                android:id="@+id/studentCntText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student Register : "
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_marginStart="10dp"/>
+            <TextView
+                android:id="@+id/studentCnt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 100"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
