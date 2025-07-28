@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/card_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="InvalidId">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/creditbackground1"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="-100dp"
+            android:layout_marginEnd="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/visalogo"
+                android:layout_width="120dp"
+                android:layout_height="80dp"
+                android:src="@drawable/visa_logo"
+                android:layout_marginTop="70dp"/>
+            <ImageView
+                android:id="@+id/citilogo"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="170dp"
+                android:layout_marginTop="100dp"
+                android:src="@drawable/citilogo"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="205dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textaccno1"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="XXXX"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textaccno2"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="XXXX"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textaccno3"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="XXXX"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/textaccno4"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:text="XXXX"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/cvvtext"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="30dp"
+            android:text="XXXX"
+            android:layout_marginTop="240dp"
+            android:textColor="#A5A0A0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="260dp">
+            <TextView
+                android:id="@+id/starttext"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Valid From"
+                android:textColor="@color/white"
+                android:layout_marginStart="30dp"/>
+
+            <TextView
+                android:id="@+id/expirdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Expiry Date"
+                android:textColor="@color/white"
+                android:layout_marginStart="30dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="280dp">
+            <TextView
+                android:id="@+id/startdate"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="XX/XX"
+                android:textColor="@color/white"
+                android:layout_marginStart="30dp"/>
+
+            <TextView
+                android:id="@+id/enddate"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="XX/XX"
+                android:textColor="@color/white"
+                android:layout_marginStart="30dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="290dp">
+            <TextView
+                android:id="@+id/holdername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CARDHOLDER NAME"
+                android:fontFamily="@font/robotocondenseditalic"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:layout_marginStart="30dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="340dp">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/button1"
+            android:hint="ENTER USER NAME"
+            android:inputType="textPersonName"
+            android:imeOptions="actionNext"
+            android:paddingStart="10dp"
+            android:textColorHint="#B2474040" />
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button1"
+            android:paddingStart="10dp"
+            android:elevation="50dp"
+            android:layout_marginStart="10dp">
+            <EditText
+                android:id="@+id/accno1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:hint="XXXX"
+                android:background="@color/white"
+                android:inputType="number"
+                android:maxLength="4"
+                android:gravity="center"
+                android:nextFocusForward="@id/accno2"
+                android:textColorHint="#B2474040"
+                android:layout_weight="0.5"
+                android:layout_margin="5dp"/>
+            <EditText
+                android:id="@+id/accno2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:hint="XXXX"
+                android:maxLength="4"
+                android:inputType="number"
+                android:background="@color/white"
+                android:nextFocusForward="@id/accno3"
+                android:gravity="center"
+                android:textColorHint="#B2474040"
+                android:layout_weight="0.5"
+                android:layout_margin="5dp"/>
+
+            <EditText
+                android:id="@+id/accno3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:hint="XXXX"
+                android:nextFocusForward="@id/accno4"
+                android:inputType="number"
+                android:maxLength="4"
+                android:gravity="center"
+                android:background="@color/white"
+                android:textColorHint="#B2474040"
+                android:layout_margin="5dp"
+                android:layout_weight="0.5"/>
+
+            <EditText
+                android:id="@+id/accno4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:hint="XXXX"
+                android:background="@color/white"
+                android:inputType="number"
+                android:maxLength="4"
+                android:gravity="center"
+                android:textColorHint="#B2474040"
+                android:layout_margin="5dp"
+                android:layout_weight="0.5"/>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/cvv"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:hint="CVV"
+            android:elevation="50dp"
+            android:inputType="number"
+            android:maxLength="4"
+            android:imeOptions="actionNext"
+            android:textColorHint="#B2474040"
+            android:background="@drawable/button1"
+            android:paddingStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"/>
+
+        <EditText
+            android:id="@+id/validfrom"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:hint="MM/YY"
+            android:imeOptions="actionNext"
+            android:textColorHint="#B2474040"
+            android:background="@drawable/button1"
+            android:paddingStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"/>
+        <EditText
+            android:id="@+id/expiry"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:hint="MM/YY"
+            android:imeOptions="actionNext"
+            android:textColorHint="#B2474040"
+            android:background="@drawable/button1"
+            android:paddingStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"/>
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="Procced"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#022C7A"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

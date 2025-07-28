@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1054618747122",
+    "project_id": "firbase-loginregistration",
+    "storage_bucket": "firbase-loginregistration.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054618747122:android:d848e04e361f7b7af8506b",
+        "android_client_info": {
+          "package_name": "com.example.firbase_loginregistration"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBei7H7HygNKAR3-JnclTwXxr_uFoB3QPI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

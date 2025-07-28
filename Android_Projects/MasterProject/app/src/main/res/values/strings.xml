@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MasterProject</string>
+
+    <string name="OpenDrawer">OpenDrawer</string>
+    <string name="CloseDrawer">CloseDrawer</string>
+
+    <string name="hello_blank_fragment">Hello lank fragment</string>
+</resources>

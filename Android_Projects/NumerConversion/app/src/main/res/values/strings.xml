@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">NumerConversion</string>
+    <string-array name="conversion_option">
+        <item>binary</item>
+        <item>decimal</item>
+        <item>octal</item>
+        <item>hexa</item>
+    </string-array>
+</resources>

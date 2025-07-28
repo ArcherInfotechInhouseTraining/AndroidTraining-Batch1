@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/bg1">
+
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The Best\nApp For\nYour Plants"
+        android:textColor="#8DFFFFFF"
+        android:paddingStart="30sp"
+        android:textSize="40sp"
+        android:paddingTop="60sp"/>
+
+    <Button
+        android:id="@+id/signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign in"
+        android:textSize="25sp"
+        android:layout_marginTop="250sp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:backgroundTint="#34005D2A"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Be Happy"
+        android:textColor="#8DFFFFFF"
+        android:textSize="23sp"
+        android:paddingStart="150sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New User?"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:textColor="#F224DB7A"/>
+    <TextView
+        android:id="@+id/newaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create your account "
+        android:textSize="15sp"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="-20dp"
+        android:textColor="#F23A9FD7"/>
+</LinearLayout>

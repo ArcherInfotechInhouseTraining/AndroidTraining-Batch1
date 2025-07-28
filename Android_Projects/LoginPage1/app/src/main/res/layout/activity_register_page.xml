@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterPAge"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/circlebg"
+        android:src="@drawable/arrow_left"
+        android:layout_marginTop="50sp"
+        android:layout_marginStart="50sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textSize="30sp"
+        android:textColor="#F2275F41"
+        android:layout_marginStart="150sp"
+        android:layout_marginTop="30sp"
+        />
+
+    <ImageView
+        android:layout_width="400sp"
+        android:layout_height="150sp"
+        android:layout_marginLeft="200sp"
+        android:layout_marginTop="-100sp"
+        android:background="@drawable/rimg"
+        android:rotation="-50"
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button1"
+        android:hint="full name"
+        android:backgroundTint="#520B6F39"
+        android:paddingStart="20sp"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button1"
+        android:hint="email"
+        android:backgroundTint="#520B6F39"
+        android:paddingStart="20sp"
+        android:layout_marginTop="30sp"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button1"
+        android:hint="******"
+        android:backgroundTint="#520B6F39"
+        android:layout_marginTop="30sp"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:paddingStart="20sp"/>
+
+    <Button
+        android:id="@+id/registerbutton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#520B6F39"
+        android:text="Register"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+
+        />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="50dp"
+        android:padding="-90dp"
+        android:src="@drawable/fb"
+         />
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/g"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="-45dp" />
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/a"
+        android:background="@color/white"
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="-45dp"
+        android:cropToPadding="true"/>
+
+
+</LinearLayout>
+

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Menu</string>
+    <string name="plus">+</string>
+    <string name="zero">0</string>
+    <string name="dot">.</string>
+    <string name="percentage">%</string>
+</resources>

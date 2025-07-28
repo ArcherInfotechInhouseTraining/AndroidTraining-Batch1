@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#201621"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:id="@+id/firstlinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="It's a Greate Day for Coffee"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:backgroundTint="#B0737070"
+                app:iconifiedByDefault="false"
+                app:queryHint="search"
+                android:layout_margin="20dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/secondlinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/firstlinear"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                android:text="Cold Coffee"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                android:text="Hot Coffee"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:textStyle="bold"
+                android:text="Cappuccino"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/secondlinear">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:rowCount="4"
+                android:columnCount="2">
+
+                    <LinearLayout
+                        android:layout_width="180dp"
+                        android:layout_height="244dp"
+                        android:layout_row="0"
+                        android:layout_column="0"
+                        android:background="@drawable/shape"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:elevation="10dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="250dp"
+                            android:layout_height="match_parent"
+                            android:padding="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="-70dp"
+                            android:src="@drawable/coffee" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Latte"
+                            android:textStyle="bold"
+                            android:layout_marginTop="-100dp"
+                            android:textSize="20sp"
+                            android:paddingStart="20dp"
+                            android:paddingTop="20dp"
+                            android:textColor="@color/white"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Best Coffee"
+                            android:textColor="#837D7D"
+                            android:paddingStart="20dp"
+                            android:paddingTop="22dp"
+                            android:layout_marginTop="-80dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="$30"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:textColor="@color/white"
+                            android:paddingStart="20dp"
+                            android:paddingTop="20dp"
+                            android:layout_marginTop="-60dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="180dp"
+                        android:layout_height="244dp"
+                        android:layout_row="0"
+                        android:layout_column="1"
+                        android:background="@drawable/shape"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="250dp"
+                            android:layout_height="match_parent"
+                            android:padding="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="-70dp"
+                            android:src="@drawable/black_coffee" />
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Black Coffee"
+                            android:textStyle="bold"
+                            android:layout_marginTop="-100dp"
+                            android:textSize="20sp"
+                            android:paddingStart="20dp"
+                            android:paddingTop="20dp"
+                            android:textColor="@color/white"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Best Coffee"
+                            android:textColor="#837D7D"
+                            android:paddingStart="20dp"
+                            android:paddingTop="22dp"
+                            android:layout_marginTop="-80dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="$30"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:textColor="@color/white"
+                            android:paddingStart="20dp"
+                            android:paddingTop="20dp"
+                            android:layout_marginTop="-60dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="180dp"
+                        android:layout_height="244dp"
+                        android:layout_row="1"
+                        android:layout_column="0"
+                        android:background="@drawable/shape"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:paddingTop="20dp"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="250dp"
+                            android:layout_height="match_parent"
+                            android:padding="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="-70dp"
+                            android:src="@drawable/lungo" />
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Lungo"
+                            android:textStyle="bold"
+                            android:layout_marginTop="-100dp"
+                            android:textSize="20sp"
+                            android:paddingStart="20dp"
+                            android:paddingTop="20dp"
+                            android:textColor="@color/white"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Best Coffee"
+                            android:textColor="#837D7D"
+                            android:paddingStart="20dp"
+                            android:paddingTop="22dp"
+                            android:layout_marginTop="-80dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="$30"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:textColor="@color/white"
+                            android:paddingStart="20dp"
+                            android:paddingTop="20dp"
+                            android:layout_marginTop="-60dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="180dp"
+                        android:layout_height="244dp"
+                        android:layout_row="1"
+                        android:layout_column="1"
+                        android:background="@drawable/shape"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="20dp"
+                        android:paddingTop="20dp"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="250dp"
+                            android:layout_height="match_parent"
+                            android:layout_row="0"
+                            android:layout_column="0"
+                            android:padding="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="-70dp"
+                            android:src="@drawable/espresso" />
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Espresso"
+                            android:textStyle="bold"
+                            android:layout_marginTop="-100dp"
+                            android:textSize="20sp"
+                            android:paddingStart="20dp"
+                            android:paddingTop="20dp"
+                            android:textColor="@color/white"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Best Coffee"
+                            android:textColor="#837D7D"
+                            android:paddingStart="20dp"
+                            android:paddingTop="22dp"
+                            android:layout_marginTop="-80dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="$30"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:textColor="@color/white"
+                            android:paddingStart="20dp"
+                            android:paddingTop="20dp"
+                            android:layout_marginTop="-60dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="180dp"
+                        android:layout_height="244dp"
+                        android:layout_row="2"
+                        android:layout_column="0"
+                        android:background="@drawable/shape"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="250dp"
+                            android:layout_height="match_parent"
+                            android:padding="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="-70dp"
+                            android:src="@drawable/hot_coffee"/>
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Hot Coffee"
+                            android:textStyle="bold"
+                            android:layout_marginTop="-100dp"
+                            android:textSize="20sp"
+                            android:paddingStart="20dp"
+                            android:paddingTop="20dp"
+                            android:textColor="@color/white"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Best Coffee"
+                            android:textColor="#837D7D"
+                            android:paddingTop="22dp"
+                            android:paddingStart="20dp"
+                            android:layout_marginTop="-80dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="$30"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:textColor="@color/white"
+                            android:paddingStart="20dp"
+                            android:paddingTop="20dp"
+                            android:layout_marginTop="-60dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="180dp"
+                        android:layout_height="244dp"
+                        android:layout_row="2"
+                        android:layout_column="1"
+                        android:background="@drawable/shape"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="20dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="250dp"
+                            android:layout_height="280dp"
+                            android:padding="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="-50dp"
+                            android:src="@drawable/cold_coffee" />
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Cold Coffee"
+                            android:textStyle="bold"
+                            android:layout_marginTop="-80dp"
+                            android:textSize="20sp"
+                            android:paddingStart="20dp"
+                            android:paddingTop="20dp"
+                            android:textColor="@color/white"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Best Coffee"
+                            android:textColor="#837D7D"
+                            android:paddingStart="20dp"
+                            android:paddingTop="27dp"
+                            android:layout_marginTop="-80dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="$30"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:textColor="@color/white"
+                            android:paddingStart="20dp"
+                            android:paddingTop="22dp"
+                            android:layout_marginTop="-60dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="180dp"
+                        android:layout_height="244dp"
+                        android:layout_row="3"
+                        android:layout_column="0"
+                        android:background="@drawable/shape"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="250dp"
+                            android:layout_height="280dp"
+                            android:padding="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="-70dp"
+                            android:src="@drawable/coldwith_icecream" />
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Cold with IceCream"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="-80dp"
+                            android:paddingStart="20dp"
+                            android:paddingTop="25dp"
+                            android:textColor="@color/white"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Best Coffee"
+                            android:textColor="#837D7D"
+                            android:paddingStart="20dp"
+                            android:paddingTop="20dp"
+                            android:layout_marginTop="-80dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="$30"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:textColor="@color/white"
+                            android:paddingStart="20dp"
+                            android:paddingTop="20dp"
+                            android:layout_marginTop="-60dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="180dp"
+                        android:layout_height="244dp"
+                        android:layout_row="3"
+                        android:layout_column="1"
+                        android:background="@drawable/shape"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="20dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="250dp"
+                            android:layout_height="match_parent"
+                            android:layout_row="0"
+                            android:layout_column="0"
+                            android:padding="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="-70dp"
+                            android:src="@drawable/ristretto" />
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Ristretto"
+                            android:textStyle="bold"
+                            android:layout_marginTop="-100dp"
+                            android:textSize="20sp"
+                            android:paddingStart="20dp"
+                            android:paddingTop="20dp"
+                            android:textColor="@color/white"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Best Coffee"
+                            android:textColor="#837D7D"
+                            android:paddingStart="20dp"
+                            android:paddingTop="22dp"
+                            android:layout_marginTop="-80dp"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="$30"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:textColor="@color/white"
+                            android:paddingStart="20dp"
+                            android:paddingTop="20dp"
+                            android:layout_marginTop="-60dp"/>
+                    </LinearLayout>
+                </GridLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+</FrameLayout>

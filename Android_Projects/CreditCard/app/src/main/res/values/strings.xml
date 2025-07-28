@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">CreditCard</string>
+    <string name="default_no">XXXX \t XXXX \t XXXX \t XXXX</string>
+</resources>

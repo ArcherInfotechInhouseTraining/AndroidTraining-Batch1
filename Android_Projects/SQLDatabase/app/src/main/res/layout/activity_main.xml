@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CRUD In SQLite"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/nameedit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter The Name"
+        android:textSize="20sp"
+        android:layout_margin="30dp"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/phoneedit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        android:textSize="20sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/dobedit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="DOB"
+        android:textSize="20sp"
+        android:layout_margin="30dp"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/addressedit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address"
+        android:textSize="20sp"
+        android:layout_margin="30dp"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="25dp">
+
+        <Button
+            android:id="@+id/insertbtn"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:text="Insert"
+            android:backgroundTint="#087E0C"/>
+
+        <Button
+            android:id="@+id/updatebtn"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:text="Update"
+            android:layout_marginStart="30dp"
+            android:backgroundTint="#850F99"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="25dp">
+
+        <Button
+            android:id="@+id/deletebtn"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:text="Delete"
+            android:backgroundTint="#AB2013"/>
+
+        <Button
+            android:id="@+id/readbtn"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:text="Update"
+            android:layout_marginStart="30dp"
+            android:backgroundTint="#1127A7"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
